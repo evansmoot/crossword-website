@@ -6,7 +6,10 @@ const app = express();
 
 app.get('/scrape', function(req, res) {
     url = 'https://www.laxcrossword.com/';
-    
+
+    request(url, function(error, response, html) {
+        
+    });
 });
 
 app.listen('8080');
